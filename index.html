@@ -9,119 +9,139 @@
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-<nav class="nav">
+<div class="frame">
+<header class="site-header">
   <div class="wrap">
-    <a href="#top" class="nav-brand"><span class="dot"></span> VehicleDynamics</a>
-    <div class="nav-links">
+    <a class="brand" href="#top"><span class="brand-mark"></span>VehicleDynamics</a>
+    <nav>
       <a href="#how-it-works">How it works</a>
       <a href="#workflow">Workflow</a>
-      <a href="#weather">Weather &amp; performance</a>
+      <a href="#weather">Weather</a>
       <a href="#technical">Technical</a>
-    </div>
-    <a href="#get" class="nav-cta">Get the plugin</a>
-    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-  </div>
-</nav>
-<div class="mobile-panel">
-  <div class="wrap">
-    <a href="#how-it-works">How it works</a>
-    <a href="#workflow">Workflow</a>
-    <a href="#weather">Weather &amp; performance</a>
-    <a href="#technical">Technical</a>
-    <a href="#get">Get the plugin</a>
-  </div>
-</div>
-
-<header class="hero" id="top">
-  <div class="hero-field"></div>
-  <div class="hero-scan"></div>
-  <div class="hero-points"></div>
-  <div class="wrap">
-    <div class="hero-tag"><span class="bar"></span> VEHICLEDYNAMICS · UNREAL ENGINE PLUGIN</div>
-    <h1>Vehicle dynamics for Unreal Engine</h1>
-    <p class="lede">Chaos-driven vehicles with independent suspension, combined-slip tires, drivetrain and aero. Turn any car mesh into a drivable pawn.</p>
-    <div class="chip-row">
-      <span class="chip">Win64</span>
-      <span class="chip">C++ source</span>
-      <span class="chip">Blueprint API</span>
-      <span class="chip">Chaos Physics</span>
-    </div>
-    <div class="hero-actions">
-      <a href="#get" class="btn btn-solid">Get the plugin</a>
-      <a href="#how-it-works" class="btn btn-ghost">See how it works</a>
-    </div>
+      <a href="#get">Get the plugin</a>
+    </nav>
   </div>
 </header>
 
-<section id="how-it-works">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="kicker c-cyan">HOW IT WORKS</span>
-      <h2>All you need is a car and its wheels</h2>
-    </div>
-    <div class="duo">
-      <div class="step-card"><div class="corners"><i></i><i></i><i></i><i></i></div>
-        <div class="num">1</div>
-        <h4>The vehicle body</h4>
-        <p>One mesh for the car body, facing forward.</p>
+<main id="top">
+  <section class="hero2">
+    <div class="wrap">
+      <div class="hero2-copy">
+        <span class="pill"><span class="dot"></span>Unreal Engine · Plugin</span>
+        <h1 style="display:block;font-size:clamp(32px,4.2vw,50px)">Vehicle dynamics for Unreal Engine</h1>
+        <p class="lede">Chaos-driven vehicles with independent suspension, combined-slip tires, drivetrain and aero. Turn any car mesh into a drivable pawn.</p>
+        <div class="hero2-cta">
+          <a class="btn btn-primary" href="#get">Get the plugin</a>
+          <a class="btn btn-ghost" href="#how-it-works">See how it works</a>
+        </div>
+        <div class="hero2-stats">
+          <div><strong>5</strong><span>Minute install</span></div>
+          <div><strong>UE5</strong><span>Chaos physics</span></div>
+        </div>
       </div>
-      <div class="plus">+</div>
-      <div class="step-card"><div class="corners"><i></i><i></i><i></i><i></i></div>
-        <div class="num">2</div>
-        <h4>The wheels, separated</h4>
-        <p>Each wheel as its own mesh, with its pivot at the centre.</p>
+
+      <div class="hero2-visual">
+        <svg viewBox="0 0 340 220" xmlns="http://www.w3.org/2000/svg">
+          <g fill="none" stroke="url(#g)" stroke-width="1.4" opacity=".9">
+            <polygon points="30,150 90,110 240,105 300,140 300,165 30,165"/>
+            <line x1="90" y1="110" x2="120" y2="70"/>
+            <line x1="120" y1="70" x2="210" y2="68"/>
+            <line x1="210" y1="68" x2="240" y2="105"/>
+            <line x1="120" y1="70" x2="120" y2="150"/>
+            <line x1="210" y1="68" x2="210" y2="150"/>
+            <line x1="30" y1="150" x2="120" y2="150"/>
+            <line x1="120" y1="150" x2="210" y2="150"/>
+            <line x1="210" y1="150" x2="300" y2="150"/>
+          </g>
+          <circle cx="80" cy="168" r="26" fill="none" stroke="#ff9d4d" stroke-width="1.6"/>
+          <circle cx="252" cy="168" r="26" fill="none" stroke="#ff9d4d" stroke-width="1.6"/>
+          <defs>
+            <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#ff5d01"/>
+              <stop offset="1" stop-color="#8b5cf6"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <div class="hero2-pager">
+          <span class="line"></span>
+          <span>ANY MESH → DRIVABLE PAWN</span>
+          <span class="line"></span>
+        </div>
       </div>
     </div>
-    <p class="note-line">Add the four wheels to the Blueprint and press Play. The plugin handles suspension, tires, engine and brakes.</p>
-  </div>
-</section>
+  </section>
 
-<section id="whats-inside">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="kicker c-green">WHAT'S INSIDE</span>
-      <h2>One actor, one wheel component</h2>
-    </div>
-    <div class="tbl-scroll">
-      <table class="tbl">
-        <thead><tr><th>Subsystem</th><th>Model</th><th>Key parameters</th></tr></thead>
-        <tbody>
-          <tr><td class="strong">Suspension</td><td>Spring + damper per corner, auto preload, bump stop, anti-roll bars</td><td><code>SpringStiffness</code>, <code>ReboundDamping</code></td></tr>
-          <tr><td class="strong">Tires</td><td>Combined-slip magic-formula curve, friction circle, surface friction</td><td><code>PeakSlipRatio</code>, <code>PeakSlipAngle</code></td></tr>
-          <tr><td class="strong">Drivetrain</td><td>Torque curve, automatic gearbox, open differentials, FWD / RWD / AWD</td><td><code>EngineMaxTorque</code>, <code>GearRatios</code></td></tr>
-          <tr><td class="strong">Brakes and aids</td><td>Per-wheel brake torque, handbrake, ABS, traction control</td><td><code>MaxBrakeTorque</code>, <code>bABS</code></td></tr>
-          <tr><td class="strong">Aerodynamics</td><td>Quadratic drag, speed-squared downforce with balance offset</td><td><code>DragCoefficient</code>, <code>DownforceOffset</code></td></tr>
-        </tbody>
-      </table>
+  <div class="strip2">
+    <div class="wrap">
+      <span>Win64</span><span>C++ source</span><span>Blueprint API</span><span>Chaos Physics</span><span>Unreal Engine 5</span>
     </div>
   </div>
-</section>
 
-<section id="workflow">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="kicker c-green">THE WORKFLOW</span>
-      <h2>From car mesh to driving in five steps</h2>
+  <section class="section" id="how-it-works">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">How it works</p>
+        <h2>All you need is a car and its wheels</h2>
+      </div>
+      <div class="spec-grid">
+        <div class="spec-card">
+          <h4>1 · The vehicle body</h4>
+          <p>One mesh for the car body, facing forward.</p>
+        </div>
+        <div class="spec-card">
+          <h4>2 · The wheels, separated</h4>
+          <p>Each wheel as its own mesh, with its pivot at the centre.</p>
+        </div>
+      </div>
+      <p class="footnote" style="margin-top:28px">Add the four wheels to the Blueprint and press Play. The plugin handles suspension, tires, engine and brakes.</p>
     </div>
-    <div class="workflow-grid">
-      <div class="wf-item"><div class="corners"><i></i><i></i><i></i><i></i></div><div class="n" style="color:var(--green)">01</div><h4>Install</h4><p>Copy the plugin into Plugins/ and build the editor.</p><div class="tag">~5 min</div></div>
-      <div class="wf-item"><div class="corners"><i></i><i></i><i></i><i></i></div><div class="n" style="color:var(--cyan)">02</div><h4>Prepare</h4><p>Orient, scale and split the model into a body and four wheels.</p><div class="tag">Blender / DCC</div></div>
-      <div class="wf-item"><div class="corners"><i></i><i></i><i></i><i></i></div><div class="n" style="color:var(--orange)">03</div><h4>Place wheels</h4><p>Measure each hub centre and radius on the prepared mesh.</p><div class="tag">layout.json</div></div>
-      <div class="wf-item"><div class="corners"><i></i><i></i><i></i><i></i></div><div class="n" style="color:var(--purple)">04</div><h4>Build</h4><p>One script imports the meshes and creates the drivable Blueprint.</p><div class="tag">BuildVehicle.py</div></div>
-      <div class="wf-item"><div class="corners"><i></i><i></i><i></i><i></i></div><div class="n" style="color:var(--text)">05</div><h4>Drive</h4><p>Press Play. Tune feel in Class Defaults, profile with vd.ShowStats.</p><div class="tag">Play / Standalone</div></div>
-    </div>
-  </div>
-</section>
+  </section>
 
-<section id="step-1">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="kicker c-green">STEP 1 · INSTALL</span>
-      <h2>Drop in, build, enable</h2>
+  <section class="section" id="whats-inside" style="border-top:1px solid var(--line)">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">What's inside</p>
+        <h2>One actor, one wheel component</h2>
+      </div>
+      <div class="tbl-scroll">
+        <table class="tbl">
+          <thead><tr><th>Subsystem</th><th>Model</th><th>Key parameters</th></tr></thead>
+          <tbody>
+            <tr><td class="strong">Suspension</td><td>Spring + damper per corner, auto preload, bump stop, anti-roll bars</td><td><code>SpringStiffness</code>, <code>ReboundDamping</code></td></tr>
+            <tr><td class="strong">Tires</td><td>Combined-slip magic-formula curve, friction circle, surface friction</td><td><code>PeakSlipRatio</code>, <code>PeakSlipAngle</code></td></tr>
+            <tr><td class="strong">Drivetrain</td><td>Torque curve, automatic gearbox, open differentials, FWD / RWD / AWD</td><td><code>EngineMaxTorque</code>, <code>GearRatios</code></td></tr>
+            <tr><td class="strong">Brakes and aids</td><td>Per-wheel brake torque, handbrake, ABS, traction control</td><td><code>MaxBrakeTorque</code>, <code>bABS</code></td></tr>
+            <tr><td class="strong">Aerodynamics</td><td>Quadratic drag, speed-squared downforce with balance offset</td><td><code>DragCoefficient</code>, <code>DownforceOffset</code></td></tr>
+          </tbody>
+        </table>
+      </div>
     </div>
-    <div class="step-detail">
-      <div class="codeblock">&lt;YourProject&gt;/
+  </section>
+
+  <section class="section" id="workflow" style="border-top:1px solid var(--line)">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">The workflow</p>
+        <h2>From car mesh to driving in five steps</h2>
+      </div>
+      <div class="workflow-grid">
+        <div class="wf-item" style="--ca:#ff5d01"><div class="n" style="color:var(--accent)">01</div><h4>Install</h4><p>Copy the plugin into Plugins/ and build the editor.</p><div class="tag">~5 min</div></div>
+        <div class="wf-item"><div class="n" style="color:var(--accent2)">02</div><h4>Prepare</h4><p>Orient, scale and split the model into a body and four wheels.</p><div class="tag">Blender / DCC</div></div>
+        <div class="wf-item"><div class="n" style="color:#ff3fb0">03</div><h4>Place wheels</h4><p>Measure each hub centre and radius on the prepared mesh.</p><div class="tag">layout.json</div></div>
+        <div class="wf-item"><div class="n" style="color:#3aa0ff">04</div><h4>Build</h4><p>One script imports the meshes and creates the drivable Blueprint.</p><div class="tag">BuildVehicle.py</div></div>
+        <div class="wf-item"><div class="n" style="color:var(--text)">05</div><h4>Drive</h4><p>Press Play. Tune feel in Class Defaults, profile with vd.ShowStats.</p><div class="tag">Play / Standalone</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="step-1" style="border-top:1px solid var(--line)">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Step 1 · Install</p>
+        <h2>Drop in, build, enable</h2>
+      </div>
+      <div class="step-detail">
+        <div class="codeblock">&lt;YourProject&gt;/
   Plugins/
     <span class="g">VehicleDynamics/</span>
       <span class="c">VehicleDynamics.uplugin</span>
@@ -130,69 +150,68 @@
         Public/  Private/
       <span class="o">Content/VehicleDynamics/</span>
         Blueprints/  Meshes/</div>
-      <div class="callout-list">
-        <div>
-          <h5>C++ project, distinct name</h5>
-          <p>The host project must not be called VehicleDynamics, or the two modules collide at build time.</p>
-        </div>
-        <div>
-          <h5>Generate and build</h5>
-          <p>Right-click the .uproject, generate project files, build Development Editor | Win64.</p>
-        </div>
-        <div>
-          <h5>Keep it off cloud sync</h5>
-          <p>OneDrive and similar tools corrupt Intermediate/ build files. Use a local folder.</p>
+        <div class="callout-list">
+          <div>
+            <h5>C++ project, distinct name</h5>
+            <p>The host project must not be called VehicleDynamics, or the two modules collide at build time.</p>
+          </div>
+          <div>
+            <h5>Generate and build</h5>
+            <p>Right-click the .uproject, generate project files, build Development Editor | Win64.</p>
+          </div>
+          <div>
+            <h5>Keep it off cloud sync</h5>
+            <p>OneDrive and similar tools corrupt Intermediate/ build files. Use a local folder.</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="step-2">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="kicker c-green">STEP 2 · PREPARE THE MESH</span>
-      <h2>Five rules for any car model</h2>
-    </div>
-    <div class="step-detail">
-      <ul class="rule-list">
-        <li><span class="rn">1</span><div><h5>+X forward, +Z up</h5><p>Nose along +X. Apply all transforms before export.</p></div></li>
-        <li><span class="rn">2</span><div><h5>Real-world size</h5><p>1 m in the DCC tool = 100 Unreal units. Check the wheelbase.</p></div></li>
-        <li><span class="rn">3</span><div><h5>Body origin on the ground</h5><p>Centred between the axles, all body parts merged into one mesh.</p></div></li>
-        <li><span class="rn">4</span><div><h5>One mesh per wheel</h5><p>Pivot at the hub, rolling axis along Y, hub facing outward.</p></div></li>
-        <li><span class="rn">5</span><div><h5>Simple collision hull</h5><p>A UCX_ convex hull whose bottom sits about 30 cm above the ground.</p></div></li>
-      </ul>
-      <div>
-        <div class="wireframe-box">
-          <svg viewBox="0 0 340 220" xmlns="http://www.w3.org/2000/svg">
-            <g fill="none" stroke="#3ED598" stroke-width="1.2" opacity="0.85">
-              <polygon points="30,150 90,110 240,105 300,140 300,165 30,165"/>
-              <line x1="90" y1="110" x2="120" y2="70"/>
-              <line x1="120" y1="70" x2="210" y2="68"/>
-              <line x1="210" y1="68" x2="240" y2="105"/>
-              <line x1="120" y1="70" x2="120" y2="150"/>
-              <line x1="210" y1="68" x2="210" y2="150"/>
-              <line x1="30" y1="150" x2="120" y2="150"/>
-              <line x1="120" y1="150" x2="210" y2="150"/>
-              <line x1="210" y1="150" x2="300" y2="150"/>
-            </g>
-            <circle cx="80" cy="168" r="26" fill="none" stroke="#8D99A3" stroke-width="1.2"/>
-            <circle cx="252" cy="168" r="26" fill="none" stroke="#8D99A3" stroke-width="1.2"/>
-          </svg>
+  <section class="section" id="step-2" style="border-top:1px solid var(--line)">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Step 2 · Prepare the mesh</p>
+        <h2>Five rules for any car model</h2>
+      </div>
+      <div class="step-detail">
+        <ul class="rule-list">
+          <li><span class="rn">1</span><div><h5>+X forward, +Z up</h5><p>Nose along +X. Apply all transforms before export.</p></div></li>
+          <li><span class="rn">2</span><div><h5>Real-world size</h5><p>1 m in the DCC tool = 100 Unreal units. Check the wheelbase.</p></div></li>
+          <li><span class="rn">3</span><div><h5>Body origin on the ground</h5><p>Centred between the axles, all body parts merged into one mesh.</p></div></li>
+          <li><span class="rn">4</span><div><h5>One mesh per wheel</h5><p>Pivot at the hub, rolling axis along Y, hub facing outward.</p></div></li>
+          <li><span class="rn">5</span><div><h5>Simple collision hull</h5><p>A UCX_ convex hull whose bottom sits about 30 cm above the ground.</p></div></li>
+        </ul>
+        <div>
+          <div class="wireframe-box">
+            <svg viewBox="0 0 340 220" xmlns="http://www.w3.org/2000/svg">
+              <g fill="none" stroke="#ff5d01" stroke-width="1.2" opacity="0.85">
+                <polygon points="30,150 90,110 240,105 300,140 300,165 30,165"/>
+                <line x1="90" y1="110" x2="120" y2="70"/>
+                <line x1="120" y1="70" x2="210" y2="68"/>
+                <line x1="210" y1="68" x2="240" y2="105"/>
+                <line x1="120" y1="70" x2="120" y2="150"/>
+                <line x1="210" y1="68" x2="210" y2="150"/>
+                <line x1="30" y1="150" x2="120" y2="150"/>
+                <line x1="120" y1="150" x2="210" y2="150"/>
+                <line x1="210" y1="150" x2="300" y2="150"/>
+              </g>
+              <circle cx="80" cy="168" r="26" fill="none" stroke="#9492a8" stroke-width="1.2"/>
+              <circle cx="252" cy="168" r="26" fill="none" stroke="#9492a8" stroke-width="1.2"/>
+            </svg>
+          </div>
+          <p class="caption">SUV sample: body raised, wheels pulled out, orange = UCX collision hull.</p>
         </div>
-        <p class="caption">SUV sample: body raised, wheels pulled out, green = UCX collision hull.</p>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="worked-example">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="kicker c-green">WORKED EXAMPLE · SUV SAMPLE</span>
-      <h2>What preparation does to a real model</h2>
-    </div>
-    <div class="step-detail">
+  <section class="section" id="worked-example" style="border-top:1px solid var(--line)">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Worked example · SUV sample</p>
+        <h2>What preparation does to a real model</h2>
+      </div>
       <div class="tbl-scroll">
         <table class="tbl">
           <thead><tr><th>Item</th><th>Source file</th><th>Prepared</th></tr></thead>
@@ -212,68 +231,67 @@
         <div><div class="num">1.66 m</div><div class="label">Front track</div></div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="step-3">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="kicker c-orange">STEP 3 · PLACE THE WHEELS</span>
-      <h2>Each wheel sits at its measured hub</h2>
-    </div>
-    <div class="wheel-diagram-wrap">
-      <div class="wireframe-box">
-        <svg viewBox="0 0 380 220" xmlns="http://www.w3.org/2000/svg" font-family="JetBrains Mono, monospace">
-          <rect x="60" y="50" width="260" height="120" rx="26" fill="none" stroke="#333F49" stroke-width="1.4"/>
-          <line x1="90" y1="30" x2="90" y2="190" stroke="#3ED598" stroke-width="1" stroke-dasharray="3 4"/>
-          <line x1="290" y1="30" x2="290" y2="190" stroke="#3ED598" stroke-width="1" stroke-dasharray="3 4"/>
-          <line x1="60" y1="20" x2="320" y2="20" stroke="#4CC9F0" stroke-width="1"/>
-          <text x="190" y="14" fill="#4CC9F0" font-size="10" text-anchor="middle">wheelbase 292 cm</text>
-          <line x1="340" y1="55" x2="340" y2="165" stroke="#4CC9F0" stroke-width="1"/>
-          <text x="352" y="112" fill="#4CC9F0" font-size="10" transform="rotate(90 352 112)" text-anchor="middle">track 166 cm</text>
-          <circle cx="90" cy="55" r="9" fill="none" stroke="#4CC9F0" stroke-width="1.6"/>
-          <circle cx="290" cy="55" r="9" fill="none" stroke="#4CC9F0" stroke-width="1.6"/>
-          <circle cx="90" cy="165" r="9" fill="none" stroke="#FF8A3D" stroke-width="1.6"/>
-          <circle cx="290" cy="165" r="9" fill="none" stroke="#FF8A3D" stroke-width="1.6"/>
-          <text x="70" y="40" fill="#8D99A3" font-size="9" text-anchor="end">FL 146.2, -82.8, 37.1</text>
-          <text x="310" y="40" fill="#8D99A3" font-size="9">FR 146.2, 82.8, 37.1</text>
-          <text x="70" y="192" fill="#8D99A3" font-size="9" text-anchor="end">RL -146.2, -84.7, 36.9</text>
-          <text x="310" y="192" fill="#8D99A3" font-size="9">RR -146.2, 84.7, 36.9</text>
-        </svg>
+  <section class="section" id="step-3" style="border-top:1px solid var(--line)">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Step 3 · Place the wheels</p>
+        <h2>Each wheel sits at its measured hub</h2>
       </div>
-      <div class="callout-list">
-        <div>
-          <h5>Coordinates in cm</h5>
-          <p>Body space: +X forward, +Y right, +Z up.</p>
+      <div class="wheel-diagram-wrap">
+        <div class="wireframe-box">
+          <svg viewBox="0 0 380 220" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+            <rect x="60" y="50" width="260" height="120" rx="26" fill="none" stroke="#9492a8" stroke-width="1.4"/>
+            <line x1="90" y1="30" x2="90" y2="190" stroke="#ff5d01" stroke-width="1" stroke-dasharray="3 4"/>
+            <line x1="290" y1="30" x2="290" y2="190" stroke="#ff5d01" stroke-width="1" stroke-dasharray="3 4"/>
+            <line x1="60" y1="20" x2="320" y2="20" stroke="#8b5cf6" stroke-width="1"/>
+            <text x="190" y="14" fill="#8b5cf6" font-size="10" text-anchor="middle">wheelbase 292 cm</text>
+            <line x1="340" y1="55" x2="340" y2="165" stroke="#8b5cf6" stroke-width="1"/>
+            <text x="352" y="112" fill="#8b5cf6" font-size="10" transform="rotate(90 352 112)" text-anchor="middle">track 166 cm</text>
+            <circle cx="90" cy="55" r="9" fill="none" stroke="#8b5cf6" stroke-width="1.6"/>
+            <circle cx="290" cy="55" r="9" fill="none" stroke="#8b5cf6" stroke-width="1.6"/>
+            <circle cx="90" cy="165" r="9" fill="none" stroke="#ff5d01" stroke-width="1.6"/>
+            <circle cx="290" cy="165" r="9" fill="none" stroke="#ff5d01" stroke-width="1.6"/>
+            <text x="70" y="40" fill="#9492a8" font-size="9" text-anchor="end">FL 146.2, -82.8, 37.1</text>
+            <text x="310" y="40" fill="#9492a8" font-size="9">FR 146.2, 82.8, 37.1</text>
+            <text x="70" y="192" fill="#9492a8" font-size="9" text-anchor="end">RL -146.2, -84.7, 36.9</text>
+            <text x="310" y="192" fill="#9492a8" font-size="9">RR -146.2, 84.7, 36.9</text>
+          </svg>
         </div>
-        <div>
-          <h5>From Blender</h5>
-          <p>X × 100, −Y × 100, Z × 100. Unreal flips Y.</p>
-        </div>
-        <div>
-          <h5>Ride height</h5>
-          <p>The placed position is the static ride height; springs are preloaded to hold it.</p>
+        <div class="callout-list">
+          <div>
+            <h5>Coordinates in cm</h5>
+            <p>Body space: +X forward, +Y right, +Z up.</p>
+          </div>
+          <div>
+            <h5>From Blender</h5>
+            <p>X × 100, −Y × 100, Z × 100. Unreal flips Y.</p>
+          </div>
+          <div>
+            <h5>Ride height</h5>
+            <p>The placed position is the static ride height; springs are preloaded to hold it.</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="step-4">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="kicker c-purple" style="color:var(--purple)">STEP 4 · BUILD THE BLUEPRINT</span>
-      <h2>One script, or six clicks</h2>
-    </div>
-    <div class="api-grid">
-      <div class="codeblock"><span class="w">BP_SUV</span>                          <span class="c">VehicleDynamicsActor</span>
+  <section class="section" id="step-4" style="border-top:1px solid var(--line)">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Step 4 · Build the Blueprint</p>
+        <h2>One script, or six clicks</h2>
+      </div>
+      <div class="api-grid">
+        <div class="codeblock"><span class="w">BP_SUV</span>                          <span class="c">VehicleDynamicsActor</span>
   <span class="g">Body</span>                          SM_SUV_Body
     Wheel_FL                     Front · steer
     Wheel_FR                     Front · steer
     Wheel_RL                     Rear · handbrake
     Wheel_RR                     Rear · handbrake
     SpringArm › Camera           C cycles views</div>
-      <div class="codeblock"><span class="text-dim"># Tools › Execute Python Script…</span>
+        <div class="codeblock"><span class="text-dim"># Tools › Execute Python Script…</span>
 <span class="g">BuildVehicle.py</span>
 ├ imports body + 4 wheel FBX
 ├ creates <span class="c">BP_SUV</span> from
@@ -282,167 +300,167 @@
 │ at the measured hubs
 ├ applies vehicle + wheel settings
 └ compiles, saves, spawns at (0,0,60)</div>
+      </div>
+      <p class="footnote">Manual path: Blueprint Class › VehicleDynamicsActor › Body mesh › Add › Vehicle Wheel ×4 › Class Defaults</p>
     </div>
-    <p class="note-line mono" style="font-size:.85rem;">Manual path: Blueprint Class › VehicleDynamicsActor › Body mesh › Add › Vehicle Wheel ×4 › Class Defaults</p>
-  </div>
-</section>
+  </section>
 
-<section id="params">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="kicker c-purple" style="color:var(--purple)">SUV SAMPLE SETUP</span>
-      <h2>Parameters used in this example</h2>
+  <section class="section" id="params" style="border-top:1px solid var(--line)">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">SUV sample setup</p>
+        <h2>Parameters used in this example</h2>
+      </div>
+      <div class="api-grid">
+        <div class="tbl-scroll">
+          <table class="tbl">
+            <thead><tr><th colspan="2">Vehicle · Class Defaults</th></tr></thead>
+            <tbody>
+              <tr><td class="strong">Mass</td><td>2200 kg, CoM offset (0, 0, −25) cm</td></tr>
+              <tr><td class="strong">Drive</td><td>AWD, 40% front torque</td></tr>
+              <tr><td class="strong">Engine</td><td>850 N·m, rev limit 6800 rpm</td></tr>
+              <tr><td class="strong">Gearbox</td><td>8-speed automatic, final drive 3.0</td></tr>
+              <tr><td class="strong">Anti-roll</td><td>30 / 20 kN/m front / rear</td></tr>
+              <tr><td class="strong">Aero</td><td>Cd 0.35, area 2.8 m², ClA 0.3</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="tbl-scroll">
+          <table class="tbl">
+            <thead><tr><th colspan="2">Wheel · each Vehicle Wheel</th></tr></thead>
+            <tbody>
+              <tr><td class="strong">Radius</td><td>36.9 cm, inertia 3.0 kg·m²</td></tr>
+              <tr><td class="strong">Travel</td><td>22 cm, half above ride height</td></tr>
+              <tr><td class="strong">Spring</td><td>55 kN/m, auto preload</td></tr>
+              <tr><td class="strong">Damping</td><td>4000 bump / 5500 rebound N·s/m</td></tr>
+              <tr><td class="strong">Tire</td><td>μ 1.05, peak slip 0.10 / 8°</td></tr>
+              <tr><td class="strong">Brakes</td><td>2000 N·m, rear handbrake 3500</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
-    <div class="api-grid">
-      <div class="tbl-scroll">
-        <table class="tbl">
-          <thead><tr><th colspan="2">Vehicle · Class Defaults</th></tr></thead>
-          <tbody>
-            <tr><td class="strong">Mass</td><td>2200 kg, CoM offset (0, 0, −25) cm</td></tr>
-            <tr><td class="strong">Drive</td><td>AWD, 40% front torque</td></tr>
-            <tr><td class="strong">Engine</td><td>850 N·m, rev limit 6800 rpm</td></tr>
-            <tr><td class="strong">Gearbox</td><td>8-speed automatic, final drive 3.0</td></tr>
-            <tr><td class="strong">Anti-roll</td><td>30 / 20 kN/m front / rear</td></tr>
-            <tr><td class="strong">Aero</td><td>Cd 0.35, area 2.8 m², ClA 0.3</td></tr>
-          </tbody>
-        </table>
+  </section>
+
+  <section class="section" id="camera" style="border-top:1px solid var(--line)">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">See the car from any side</p>
+        <h2>Press C to change the camera</h2>
+        <p>Hold the right mouse button to look around. The view eases back behind the car when you let go.</p>
+      </div>
+      <div class="feature-grid">
+        <article><h3>Chase</h3><p>Behind, follows heading</p></article>
+        <article><h3>Front</h3><p>Ahead, looking at the nose</p></article>
+        <article><h3>Hood</h3><p>Driver's eye view</p></article>
+        <article><h3>Orbit</h3><p>Free mouse camera</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="step-5" style="border-top:1px solid var(--line)">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Step 5 · Drive</p>
+        <h2>Seven keys to drive it</h2>
+      </div>
+      <div class="key-row">
+        <div class="key-item"><div class="keycap">W</div><span>Throttle</span></div>
+        <div class="key-item"><div class="keycap">S</div><span>Brake, reverse from stop</span></div>
+        <div class="key-item"><div class="keycap wide">A D</div><span>Steer</span></div>
+        <div class="key-item"><div class="keycap wide">SPACE</div><span>Handbrake</span></div>
+        <div class="key-item"><div class="keycap">R</div><span>Reset upright</span></div>
+        <div class="key-item"><div class="keycap">C</div><span>Camera view</span></div>
+        <div class="key-item"><div class="keycap wide">RMB</div><span>Look around</span></div>
+      </div>
+      <div class="gamepad-note spec-card" style="max-width:640px">
+        <h4>Gamepad and Blueprint</h4>
+        <p>Right / left trigger and left stick work out of the box. For AI or RL agents, disable the debug driver and call <code class="mono" style="color:var(--accent)">SetInputs()</code> each step.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="weather" style="border-top:1px solid var(--line)">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Weather</p>
+        <h2>Wet roads, rain and tire marks</h2>
+      </div>
+      <div class="feature-grid">
+        <article><h3>Grip that reacts to water</h3><p>Wet asphalt lowers friction through its Physical Material. The tire model responds automatically: longer braking, earlier slides.</p></article>
+        <article><h3>Spray from the tread</h3><p>Water is thrown up and back in proportion to speed, from a fixed droplet pool.</p></article>
+        <article><h3>Tracks and skid marks</h3><p>Rolling tires cut matte tracks through standing water. Spinning or locked wheels leave rubber.</p></article>
+        <article><h3>Rain on the GPU</h3><p>Falling streaks are animated in the material, so rain adds almost no CPU cost.</p></article>
+      </div>
+      <p class="footnote">Add a Vehicle Surface FX component to the car and a VD Rain actor to the level, or run BuildWetTrack.py</p>
+    </div>
+  </section>
+
+  <section class="section" id="performance" style="border-top:1px solid var(--line)">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Performance</p>
+        <h2>Smooth at any frame rate</h2>
       </div>
       <div class="tbl-scroll">
         <table class="tbl">
-          <thead><tr><th colspan="2">Wheel · each Vehicle Wheel</th></tr></thead>
+          <thead><tr><th>Symptom</th><th>Cause</th><th>Fix</th></tr></thead>
           <tbody>
-            <tr><td class="strong">Radius</td><td>36.9 cm, inertia 3.0 kg·m²</td></tr>
-            <tr><td class="strong">Travel</td><td>22 cm, half above ride height</td></tr>
-            <tr><td class="strong">Spring</td><td>55 kN/m, auto preload</td></tr>
-            <tr><td class="strong">Damping</td><td>4000 bump / 5500 rebound N·s/m</td></tr>
-            <tr><td class="strong">Tire</td><td>μ 1.05, peak slip 0.10 / 8°</td></tr>
-            <tr><td class="strong">Brakes</td><td>2000 N·m, rear handbrake 3500</td></tr>
+            <tr><td class="strong">Low FPS with ray tracing</td><td>Hardware RT re-traces the moving car every frame</td><td><code>r.RayTracing=False</code>, software Lumen</td></tr>
+            <tr><td class="strong">Slow motion below 60 FPS</td><td>Fixed frame rate enabled</td><td><code>bUseFixedFrameRate=False</code></td></tr>
+            <tr><td class="strong">Choppy suspension</td><td>Physics tied to render rate</td><td>Chaos substepping at 120 Hz</td></tr>
+            <tr><td class="strong">One-frame stutter</td><td>Async physics tick</td><td>Tick Physics Async off</td></tr>
+            <tr><td class="strong">GPU-bound hero car</td><td>600k+ triangles, 100+ slots</td><td>~200k triangles, ~25 slots</td></tr>
           </tbody>
         </table>
       </div>
+      <p class="footnote">Measure first: <code>vd.ShowStats 1</code> · <code>vd.Enabled 0</code> · <code>stat unit</code> · <code>stat VehicleDynamics</code></p>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="camera">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="kicker c-green">SEE THE CAR FROM ANY SIDE</span>
-      <h2>Press C to change the camera</h2>
-      <p>Hold the right mouse button to look around. The view eases back behind the car when you let go.</p>
-    </div>
-    <div class="cam-grid">
-      <div class="cam-card"><div class="corners"><i></i><i></i><i></i><i></i></div><h5>Chase</h5><p>Behind, follows heading</p></div>
-      <div class="cam-card"><div class="corners"><i></i><i></i><i></i><i></i></div><h5>Front</h5><p>Ahead, looking at the nose</p></div>
-      <div class="cam-card"><div class="corners"><i></i><i></i><i></i><i></i></div><h5>Hood</h5><p>Driver's eye view</p></div>
-      <div class="cam-card"><div class="corners"><i></i><i></i><i></i><i></i></div><h5>Orbit</h5><p>Free mouse camera</p></div>
-    </div>
-  </div>
-</section>
-
-<section id="step-5">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="kicker c-green">STEP 5 · DRIVE</span>
-      <h2>Seven keys to drive it</h2>
-    </div>
-    <div class="key-row">
-      <div class="key-item k-green"><div class="keycap">W</div><span>Throttle</span></div>
-      <div class="key-item k-cyan"><div class="keycap">S</div><span>Brake, reverse from stop</span></div>
-      <div class="key-item"><div class="keycap wide">A D</div><span>Steer</span></div>
-      <div class="key-item k-orange"><div class="keycap wide">SPACE</div><span>Handbrake</span></div>
-      <div class="key-item k-purple"><div class="keycap">R</div><span>Reset upright</span></div>
-      <div class="key-item k-green"><div class="keycap">C</div><span>Camera view</span></div>
-      <div class="key-item"><div class="keycap wide">RMB</div><span>Look around</span></div>
-    </div>
-    <div class="gamepad-note">
-      <h5>Gamepad and Blueprint</h5>
-      <p>Right / left trigger and left stick work out of the box. For AI or RL agents, disable the debug driver and call <code class="mono" style="color:var(--green)">SetInputs()</code> each step.</p>
-    </div>
-  </div>
-</section>
-
-<section id="weather">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="kicker c-green">WEATHER</span>
-      <h2>Wet roads, rain and tire marks</h2>
-    </div>
-    <div class="feature-grid">
-      <div><h5>Grip that reacts to water</h5><p>Wet asphalt lowers friction through its Physical Material. The tire model responds automatically: longer braking, earlier slides.</p></div>
-      <div><h5>Spray from the tread</h5><p>Water is thrown up and back in proportion to speed, from a fixed droplet pool.</p></div>
-      <div><h5>Tracks and skid marks</h5><p>Rolling tires cut matte tracks through standing water. Spinning or locked wheels leave rubber.</p></div>
-      <div><h5>Rain on the GPU</h5><p>Falling streaks are animated in the material, so rain adds almost no CPU cost.</p></div>
-    </div>
-    <p class="footnote">Add a Vehicle Surface FX component to the car and a VD Rain actor to the level, or run BuildWetTrack.py</p>
-  </div>
-</section>
-
-<section id="performance">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="kicker c-orange">PERFORMANCE</span>
-      <h2>Smooth at any frame rate</h2>
-    </div>
-    <div class="tbl-scroll">
-      <table class="tbl">
-        <thead><tr><th>Symptom</th><th>Cause</th><th>Fix</th></tr></thead>
-        <tbody>
-          <tr><td class="strong">Low FPS with ray tracing</td><td>Hardware RT re-traces the moving car every frame</td><td><code>r.RayTracing=False</code>, software Lumen</td></tr>
-          <tr><td class="strong">Slow motion below 60 FPS</td><td>Fixed frame rate enabled</td><td><code>bUseFixedFrameRate=False</code></td></tr>
-          <tr><td class="strong">Choppy suspension</td><td>Physics tied to render rate</td><td>Chaos substepping at 120 Hz</td></tr>
-          <tr><td class="strong">One-frame stutter</td><td>Async physics tick</td><td>Tick Physics Async off</td></tr>
-          <tr><td class="strong">GPU-bound hero car</td><td>600k+ triangles, 100+ slots</td><td>~200k triangles, ~25 slots</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <p class="footnote">Measure first: <code>vd.ShowStats 1</code> · <code>vd.Enabled 0</code> · <code>stat unit</code> · <code>stat VehicleDynamics</code></p>
-  </div>
-</section>
-
-<section id="tuning">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="kicker c-cyan">TUNING</span>
-      <h2>Tune the feel, not the code</h2>
-    </div>
-    <div class="tbl-scroll">
-      <table class="tbl">
-        <thead><tr><th>Behaviour</th><th>Change</th><th>Where</th></tr></thead>
-        <tbody>
-          <tr><td class="strong">Sits too high or low</td><td>Move the wheel components</td><td>Wheel transform</td></tr>
-          <tr><td class="strong">Bounces too long</td><td>Raise bump and rebound damping</td><td>Wheel › Suspension</td></tr>
-          <tr><td class="strong">Rolls over in corners</td><td>Lower CoM, stiffer anti-roll bars</td><td>Vehicle › Chassis</td></tr>
-          <tr><td class="strong">Understeer</td><td>Softer front or stiffer rear anti-roll</td><td>Vehicle › Suspension</td></tr>
-          <tr><td class="strong">Wheelspin at launch</td><td>Less torque, traction control on, AWD</td><td>Vehicle › Drivetrain</td></tr>
-          <tr><td class="strong">Feels sluggish</td><td>Higher steering speed and pedal rates</td><td>Vehicle › Steering</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <p class="footnote">Blueprint › Class Defaults › Vehicle</p>
-  </div>
-</section>
-
-<section id="technical">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="kicker c-cyan">TECHNICAL DETAILS</span>
-      <h2>Built for AD, RL and sim-to-real</h2>
-    </div>
-    <div class="api-grid">
+  <section class="section" id="tuning" style="border-top:1px solid var(--line)">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Tuning</p>
+        <h2>Tune the feel, not the code</h2>
+      </div>
       <div class="tbl-scroll">
         <table class="tbl">
+          <thead><tr><th>Behaviour</th><th>Change</th><th>Where</th></tr></thead>
           <tbody>
-            <tr><td class="strong">Engine</td><td>Unreal Engine 5</td></tr>
-            <tr><td class="strong">Platform</td><td>Windows 64-bit</td></tr>
-            <tr><td class="strong">Code</td><td>C++ runtime module with full source</td></tr>
-            <tr><td class="strong">Physics</td><td>Chaos rigid body, forces at each contact patch</td></tr>
-            <tr><td class="strong">Stability</td><td>Implicit wheel-spin solver, low-speed static friction</td></tr>
-            <tr><td class="strong">Diagnostics</td><td>vd.ShowStats, stat VehicleDynamics, Insights</td></tr>
+            <tr><td class="strong">Sits too high or low</td><td>Move the wheel components</td><td>Wheel transform</td></tr>
+            <tr><td class="strong">Bounces too long</td><td>Raise bump and rebound damping</td><td>Wheel › Suspension</td></tr>
+            <tr><td class="strong">Rolls over in corners</td><td>Lower CoM, stiffer anti-roll bars</td><td>Vehicle › Chassis</td></tr>
+            <tr><td class="strong">Understeer</td><td>Softer front or stiffer rear anti-roll</td><td>Vehicle › Suspension</td></tr>
+            <tr><td class="strong">Wheelspin at launch</td><td>Less torque, traction control on, AWD</td><td>Vehicle › Drivetrain</td></tr>
+            <tr><td class="strong">Feels sluggish</td><td>Higher steering speed and pedal rates</td><td>Vehicle › Steering</td></tr>
           </tbody>
         </table>
       </div>
-      <div class="codeblock"><span class="g">VehicleDynamicsActor</span>
+      <p class="footnote">Blueprint › Class Defaults › Vehicle</p>
+    </div>
+  </section>
+
+  <section class="section" id="technical" style="border-top:1px solid var(--line)">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Technical details</p>
+        <h2>Built for AD, RL and sim-to-real</h2>
+      </div>
+      <div class="api-grid">
+        <div class="tbl-scroll">
+          <table class="tbl">
+            <tbody>
+              <tr><td class="strong">Engine</td><td>Unreal Engine 5</td></tr>
+              <tr><td class="strong">Platform</td><td>Windows 64-bit</td></tr>
+              <tr><td class="strong">Code</td><td>C++ runtime module with full source</td></tr>
+              <tr><td class="strong">Physics</td><td>Chaos rigid body, forces at each contact patch</td></tr>
+              <tr><td class="strong">Stability</td><td>Implicit wheel-spin solver, low-speed static friction</td></tr>
+              <tr><td class="strong">Diagnostics</td><td>vd.ShowStats, stat VehicleDynamics, Insights</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="codeblock"><span class="g">VehicleDynamicsActor</span>
   SetThrottle / SetBrake / SetSteering
   SetInputs / SetGear / ResetVehicle
   GetTelemetry / GetWheelState
@@ -450,37 +468,33 @@
 <span class="g">VehicleWheelComponent</span>
   GetRPM / GetSlipRatio / GetSlipAngle
   GetSuspensionCompression / IsGrounded</div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="get">
-  <div class="wrap">
-    <div class="cta-box">
-      <div class="corners"><i></i><i></i><i></i><i></i></div>
-      <div>
-        <h2>Drop it into your project and start driving.</h2>
-        <p>Full C++ source, Blueprint API, and everything on this page ships in the plugin package.</p>
-      </div>
-      <div class="cta-links">
-        <a href="https://github.com/" target="_blank" rel="noopener">Repository <span>github.com/yourusername</span></a>
-        <a href="https://www.fab.com/" target="_blank" rel="noopener">Fab listing <span>fab.com/listing</span></a>
-        <a href="mailto:your-email@example.com">Support <span>your-email@example.com</span></a>
+  <section class="cta" id="get">
+    <div class="cta-glow" aria-hidden="true"></div>
+    <div class="wrap">
+      <h2>Drop it into your project and start driving.</h2>
+      <p>Full C++ source, Blueprint API, and everything on this page ships in the plugin package.</p>
+      <div class="cta-actions">
+        <a class="btn btn-primary" href="https://www.fab.com/" target="_blank" rel="noopener">Get it on Fab</a>
+        <a class="btn btn-ghost" href="https://github.com/" target="_blank" rel="noopener">Repository</a>
+        <a class="btn btn-ghost" href="mailto:your-email@example.com">Support</a>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+</main>
 
 <footer>
   <div class="wrap">
-    <p>© 2026 VehicleDynamics. Built for GitHub Pages.</p>
+    <span class="copy">© 2026 VehicleDynamics. Built for GitHub Pages.</span>
     <div class="foot-links">
       <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
       <a href="https://www.fab.com/" target="_blank" rel="noopener">Fab</a>
     </div>
   </div>
 </footer>
-
-<script src="js/main.js"></script>
+</div>
 </body>
 </html>
