@@ -27,12 +27,15 @@
   <section class="hero2">
     <div class="wrap">
       <div class="hero2-copy">
-        <span class="pill"><span class="dot"></span>Unreal Engine · Plugin</span>
-        <h1 style="display:block;font-size:clamp(32px,4.2vw,50px)">Vehicle dynamics for Unreal Engine</h1>
-        <p class="lede">Chaos-driven vehicles with independent suspension, combined-slip tires, drivetrain and aero. Turn any car mesh into a drivable pawn.</p>
+        <h1>
+          <span>Any</span><span>car</span><span>mesh,</span>
+          <span class="headline-pill" aria-hidden="true"></span>
+          <span>driving</span><span>in</span><span>minutes.</span>
+        </h1>
+        <p class="lede">Chaos-driven vehicles for Unreal Engine — independent suspension, combined-slip tires, drivetrain and aero. Turn any car mesh into a drivable pawn.</p>
         <div class="hero2-cta">
-          <a class="btn btn-primary" href="#get">Get the plugin</a>
-          <a class="btn btn-ghost" href="#how-it-works">See how it works</a>
+          <a class="btn-pill-outline" href="#get">Get the plugin</a>
+          <a class="btn-circle" href="#how-it-works" aria-label="See how it works">↘</a>
         </div>
         <div class="hero2-stats">
           <div><strong>5</strong><span>Minute install</span></div>
@@ -41,20 +44,19 @@
       </div>
 
       <div class="hero2-visual">
-        <svg viewBox="0 0 340 220" xmlns="http://www.w3.org/2000/svg">
-          <g fill="none" stroke="url(#g)" stroke-width="1.4" opacity=".9">
-            <polygon points="30,150 90,110 240,105 300,140 300,165 30,165"/>
-            <line x1="90" y1="110" x2="120" y2="70"/>
-            <line x1="120" y1="70" x2="210" y2="68"/>
-            <line x1="210" y1="68" x2="240" y2="105"/>
-            <line x1="120" y1="70" x2="120" y2="150"/>
-            <line x1="210" y1="68" x2="210" y2="150"/>
-            <line x1="30" y1="150" x2="120" y2="150"/>
-            <line x1="120" y1="150" x2="210" y2="150"/>
-            <line x1="210" y1="150" x2="300" y2="150"/>
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+          <g fill="none" stroke="url(#g)" stroke-width="1">
+            <circle cx="100" cy="100" r="70" opacity=".5"/>
+            <circle cx="100" cy="100" r="50" opacity=".7"/>
+            <circle cx="100" cy="100" r="30" opacity=".9"/>
           </g>
-          <circle cx="80" cy="168" r="26" fill="none" stroke="#ff9d4d" stroke-width="1.6"/>
-          <circle cx="252" cy="168" r="26" fill="none" stroke="#ff9d4d" stroke-width="1.6"/>
+          <g fill="#ff9d4d">
+            <circle cx="100" cy="30" r="2.4"/><circle cx="151" cy="65" r="2"/><circle cx="151" cy="135" r="2"/>
+            <circle cx="100" cy="170" r="2.4"/><circle cx="49" cy="135" r="2"/><circle cx="49" cy="65" r="2"/>
+            <circle cx="100" cy="50" r="1.8"/><circle cx="135" cy="76" r="1.6"/><circle cx="135" cy="124" r="1.6"/>
+            <circle cx="100" cy="150" r="1.8"/><circle cx="65" cy="124" r="1.6"/><circle cx="65" cy="76" r="1.6"/>
+            <circle cx="100" cy="100" r="4"/>
+          </g>
           <defs>
             <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
               <stop offset="0" stop-color="#ff5d01"/>
@@ -64,8 +66,13 @@
         </svg>
         <div class="hero2-pager">
           <span class="line"></span>
-          <span>ANY MESH → DRIVABLE PAWN</span>
+          <span>CHAOS PHYSICS · UE5</span>
           <span class="line"></span>
+        </div>
+        <div class="hero2-index">
+          <span>01</span>
+          <span class="track"><span class="dot"></span></span>
+          <span>05</span>
         </div>
       </div>
     </div>
@@ -125,11 +132,11 @@
         <h2>From car mesh to driving in five steps</h2>
       </div>
       <div class="workflow-grid">
-        <div class="wf-item" style="--ca:#ff5d01"><div class="n" style="color:var(--accent)">01</div><h4>Install</h4><p>Copy the plugin into Plugins/ and build the editor.</p><div class="tag">~5 min</div></div>
-        <div class="wf-item"><div class="n" style="color:var(--accent2)">02</div><h4>Prepare</h4><p>Orient, scale and split the model into a body and four wheels.</p><div class="tag">Blender / DCC</div></div>
-        <div class="wf-item"><div class="n" style="color:#ff3fb0">03</div><h4>Place wheels</h4><p>Measure each hub centre and radius on the prepared mesh.</p><div class="tag">layout.json</div></div>
-        <div class="wf-item"><div class="n" style="color:#3aa0ff">04</div><h4>Build</h4><p>One script imports the meshes and creates the drivable Blueprint.</p><div class="tag">BuildVehicle.py</div></div>
-        <div class="wf-item"><div class="n" style="color:var(--text)">05</div><h4>Drive</h4><p>Press Play. Tune feel in Class Defaults, profile with vd.ShowStats.</p><div class="tag">Play / Standalone</div></div>
+        <div class="wf-item" style="--ca:#ff5d01;border-top:3px solid var(--ca)"><div class="n" style="color:#ff5d01">01</div><h4>Install</h4><p>Copy the plugin into Plugins/ and build the editor.</p><div class="tag">~5 min</div></div>
+        <div class="wf-item" style="--ca:#8b5cf6;border-top:3px solid var(--ca)"><div class="n" style="color:#8b5cf6">02</div><h4>Prepare</h4><p>Orient, scale and split the model into a body and four wheels.</p><div class="tag">Blender / DCC</div></div>
+        <div class="wf-item" style="--ca:#ff3fb0;border-top:3px solid var(--ca)"><div class="n" style="color:#ff3fb0">03</div><h4>Place wheels</h4><p>Measure each hub centre and radius on the prepared mesh.</p><div class="tag">layout.json</div></div>
+        <div class="wf-item" style="--ca:#3aa0ff;border-top:3px solid var(--ca)"><div class="n" style="color:#3aa0ff">04</div><h4>Build</h4><p>One script imports the meshes and creates the drivable Blueprint.</p><div class="tag">BuildVehicle.py</div></div>
+        <div class="wf-item" style="--ca:#22c55e;border-top:3px solid var(--ca)"><div class="n" style="color:#22c55e">05</div><h4>Drive</h4><p>Press Play. Tune feel in Class Defaults, profile with vd.ShowStats.</p><div class="tag">Play / Standalone</div></div>
       </div>
     </div>
   </section>
@@ -350,10 +357,10 @@
         <p>Hold the right mouse button to look around. The view eases back behind the car when you let go.</p>
       </div>
       <div class="feature-grid">
-        <article><h3>Chase</h3><p>Behind, follows heading</p></article>
-        <article><h3>Front</h3><p>Ahead, looking at the nose</p></article>
-        <article><h3>Hood</h3><p>Driver's eye view</p></article>
-        <article><h3>Orbit</h3><p>Free mouse camera</p></article>
+        <article style="--ca:#ff5d01"><h3>Chase</h3><p>Behind, follows heading</p></article>
+        <article style="--ca:#8b5cf6"><h3>Front</h3><p>Ahead, looking at the nose</p></article>
+        <article style="--ca:#ff3fb0"><h3>Hood</h3><p>Driver's eye view</p></article>
+        <article style="--ca:#3aa0ff"><h3>Orbit</h3><p>Free mouse camera</p></article>
       </div>
     </div>
   </section>
@@ -387,10 +394,10 @@
         <h2>Wet roads, rain and tire marks</h2>
       </div>
       <div class="feature-grid">
-        <article><h3>Grip that reacts to water</h3><p>Wet asphalt lowers friction through its Physical Material. The tire model responds automatically: longer braking, earlier slides.</p></article>
-        <article><h3>Spray from the tread</h3><p>Water is thrown up and back in proportion to speed, from a fixed droplet pool.</p></article>
-        <article><h3>Tracks and skid marks</h3><p>Rolling tires cut matte tracks through standing water. Spinning or locked wheels leave rubber.</p></article>
-        <article><h3>Rain on the GPU</h3><p>Falling streaks are animated in the material, so rain adds almost no CPU cost.</p></article>
+        <article style="--ca:#3aa0ff"><h3>Grip that reacts to water</h3><p>Wet asphalt lowers friction through its Physical Material. The tire model responds automatically: longer braking, earlier slides.</p></article>
+        <article style="--ca:#06b6d4"><h3>Spray from the tread</h3><p>Water is thrown up and back in proportion to speed, from a fixed droplet pool.</p></article>
+        <article style="--ca:#8b5cf6"><h3>Tracks and skid marks</h3><p>Rolling tires cut matte tracks through standing water. Spinning or locked wheels leave rubber.</p></article>
+        <article style="--ca:#22c55e"><h3>Rain on the GPU</h3><p>Falling streaks are animated in the material, so rain adds almost no CPU cost.</p></article>
       </div>
       <p class="footnote">Add a Vehicle Surface FX component to the car and a VD Rain actor to the level, or run BuildWetTrack.py</p>
     </div>
